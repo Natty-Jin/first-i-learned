@@ -8,10 +8,6 @@ function getClock(){
     clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
+
 getClock();
 setInterval(getClock, 1000);
-
-function getClock(){
-    const date = new Date();
-    const hours = String(date.getHours()).padStart(2, "0");
-} 
